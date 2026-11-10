@@ -1,5 +1,3 @@
-
-
 from main import get_name
 
 def test_uppercase_name():
@@ -9,8 +7,6 @@ def test_data_retrieval():
     result = get_name("alice")
     assert result == "ALICE"
 
-
 def test_invalid_name():
     result = get_name("")
-    assert result == 404
-    #added comments
+    assert result is None

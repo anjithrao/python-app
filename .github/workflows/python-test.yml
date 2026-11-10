@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 
 name: Python Unit Tests
 
 on:
   push:
     branches: [ main ]
+=======
+name: Python Unit Tests
+
+on: [push, pull_request]
+>>>>>>> 7dc3c6b09dba8652fe8416d41e320f39e5aa348f
 
 jobs:
   test:
@@ -21,5 +27,9 @@ jobs:
       - name: Install pytest
         run: pip install pytest
 
+<<<<<<< HEAD
       - name: Run Unit Tests
+=======
+      - name: Run tests
+>>>>>>> 7dc3c6b09dba8652fe8416d41e320f39e5aa348f
         run: pytest -v
